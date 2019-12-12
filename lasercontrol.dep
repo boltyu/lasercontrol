@@ -1,0 +1,50 @@
+;	STMicroelectronics dependencies file
+
+[Version]
+Keyword=ST7Project
+Number=1.3
+
+[Root.Source Files.Source Files\src.src\stm8s_adc1.c.Config.0]
+ExternDep= src\stm8s_adc1.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_adc1.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_clk.h  inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h
+
+[Root.Source Files.Source Files\src.src\stm8s_clk.c.Config.0]
+ExternDep= src\stm8s_clk.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_clk.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h
+
+[Root.Source Files.Source Files\src.src\stm8s_exti.c.Config.0]
+ExternDep= src\stm8s_exti.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_exti.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_gpio.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h
+
+[Root.Source Files.Source Files\src.src\stm8s_gpio.c.Config.0]
+ExternDep= src\stm8s_gpio.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_gpio.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h
+
+[Root.Source Files.Source Files\src.src\stm8s_rst.c.Config.0]
+ExternDep= src\stm8s_rst.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_rst.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h inc\stm8s_clk.h  inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_tim1.h inc\stm8s_tim2.h
+
+[Root.Source Files.Source Files\src.src\stm8s_tim1.c.Config.0]
+ExternDep= src\stm8s_tim1.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_tim1.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim2.h
+
+[Root.Source Files.Source Files\src.src\stm8s_tim2.c.Config.0]
+ExternDep= src\stm8s_tim2.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_tim2.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim1.h
+
+[Root.Source Files.Source Files\src.src\stm8s_tim4.c.Config.0]
+ExternDep= src\stm8s_tim4.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  inc\stm8s_tim4.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim1.h inc\stm8s_tim2.h
+
+[Root.Source Files.laserctrl.c.Config.0]
+ExternDep= laserctrl.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  laserctrl.h main.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim1.h inc\stm8s_tim2.h powermode.h userbutton.h lis3mod.h
+
+[Root.Source Files.lis3mod.c.Config.0]
+ExternDep= lis3mod.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  lis3mod.h main.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim1.h inc\stm8s_tim2.h laserctrl.h powermode.h userbutton.h
+
+[Root.Source Files.main.c.Config.0]
+ExternDep= main.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  main.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h inc\stm8s_clk.h  inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h laserctrl.h lis3mod.h powermode.h userbutton.h
+
+[Root.Source Files.powermode.c.Config.0]
+ExternDep= powermode.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  powermode.h main.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim1.h inc\stm8s_tim2.h laserctrl.h lis3mod.h userbutton.h
+
+[Root.Source Files.stm8_interrupt_vector.c.Config.0]
+ExternDep= stm8_interrupt_vector.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  stm8s_it.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h inc\stm8s_clk.h  inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h userbutton.h main.h laserctrl.h lis3mod.h powermode.h
+
+[Root.Source Files.stm8s_it.c.Config.0]
+ExternDep= stm8s_it.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  stm8s_it.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h inc\stm8s_clk.h  inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h inc\stm8s_tim1.h  inc\stm8s_tim2.h
+
+[Root.Source Files.userbutton.c.Config.0]
+ExternDep= userbutton.c  "D:\Program Files (x86)\STMicroelectronics\COSMIC\FSE_Compilers\CXSTM8\Hstm8\mods0.h"  userbutton.h main.h inc\stm8s.h inc\stm8s_conf.h inc\stm8s_adc1.h  inc\stm8s_clk.h inc\stm8s_exti.h inc\stm8s_gpio.h inc\stm8s_rst.h  inc\stm8s_tim1.h inc\stm8s_tim2.h laserctrl.h lis3mod.h powermode.h
