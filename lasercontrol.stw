@@ -6,3 +6,7 @@ Keyword=ST7Workspace-V0.7
 [Project0]
 Filename=lasercontrol.stp
 Dependencies=
+[Options]
+ActiveProject=lasercontrol
+ActiveConfig=Debug
+AddSortedElements=1

@@ -6,23 +6,49 @@
 
 main()
 {
-	
+	uint16_t a = 0,d = 1,blinkspeed = 1;
 	while(1)
 	{
 		switch(GetPowerMode()){
 			case NORMAL_MODE:{
+				if(POWERCHARGING)
+				{
+					if(d)
+					{
+						if(a < U8_MAX){
+							a += blinkspeed;
+						}else{
+							delay(1000);
+							d = 0;
+						}
+					}else
+					{
+						if(a > 0){
+							a -= blinkspeed;
+						}else{
+							d = 1;
+							delay(1000);
+						}
+					}
+					if( a < U8_MAX && a > 0)
+						LedPower(a);
+				}
+				else
+				{
+					LedPower(255);
+				}
 				LaserWork();
 				ButtonFunction();
 			}break;
 			case LOWPOWER_MODE:{
-				halt();
+				PowerSave();
 			}break;
 			case CHARGING_MODE:{
 				ChargingTips();
 			}break;
 			case RECOVERING_MODE:{	// default mode
 				PowerOn();
-				LedBlink(1,3);
+				
 			}break;
 		}
 		delay(5);

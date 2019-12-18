@@ -29,4 +29,5 @@ main.h
 powermode.h
 stm8s_it.h
 userbutton.h
+d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h
 d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\mods0.h

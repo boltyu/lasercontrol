@@ -11,10 +11,12 @@ void ButtonFunction(void)
 {
 	if(KEYPRESSED){
 		presscount ++;
-		if(presscount > 500){
+		if(presscount > 100){
 			presscount = 0;
 			while(1){
-				PowerSave();
+				LedBlink(10,3);
+				LedPower(0);
+				currentmode = LOWPOWER_MODE;
 				if(!KEYPRESSED)
 				{
 					delay(5);
@@ -35,16 +37,15 @@ void ButtonFunction(void)
 @svlreg INTERRUPT_HANDLER(EXTI_PORTD_IRQHandler, 6)
 {
 	delay(5);
-	
-	if(GPIO_ReadInputPin(CHARGE_DETECTGPIOx,CHARGE_DETECTGPIOPinx) == POWERCHARGING)
-	{
-		if(GetPowerMode() == NORMAL_MODE)
-			SetPowerMode(CHARGING_MODE);
-	}
-	if(GPIO_ReadInputPin(BUTTONGPIOx,BUTTONPINx) == BUTTONPRESSED)
+	if(KEYPRESSED)
 	{
 		SetPowerMode(RECOVERING_MODE);
 	}
-
+	else if(POWERCHARGING)
+	{
+		GPIO_Init(CHARGE_DETECTGPIOx,CHARGE_DETECTGPIOPinx,GPIO_MODE_IN_FL_NO_IT);
+		SetPowerMode(CHARGING_MODE);
+	}
+	
 }
 

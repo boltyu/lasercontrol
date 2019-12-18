@@ -429,7 +429,7 @@ CFG_TypeDef	inc\stm8s.h	2526;"	typedef	typeref:struct:CFG_struct
 CFG_struct	inc\stm8s.h	2522;"	struct
 CHARGE_DETECTGPIOPinx	powermode.h	9;"	macro
 CHARGE_DETECTGPIOx	powermode.h	8;"	macro
-CHARGING_MODE	powermode.h	18;"	enumerator	enum:POWERMODE
+CHARGING_MODE	powermode.h	20;"	enumerator	enum:POWERMODE
 CKDIVR	inc\stm8s.h	516;"	member	struct:CLK_struct
 CLK	inc\stm8s.h	2619;"	macro
 CLKPrescTable	src\stm8s_clk.c	49;"	variable
@@ -692,8 +692,8 @@ CTRL_REG3	lis3mod.h	40;"	enumerator	enum:XYZCTRLREG
 CTRL_REG4	lis3mod.h	41;"	enumerator	enum:XYZCTRLREG
 CTRL_REG5	lis3mod.h	42;"	enumerator	enum:XYZCTRLREG
 CTRL_REG6	lis3mod.h	43;"	enumerator	enum:XYZCTRLREG
-ChargingTips	laserctrl.c	125;"	function	signature:(void)
-ChargingTips	laserctrl.h	26;"	prototype	signature:(void)
+ChargingTips	laserctrl.c	163;"	function	signature:(void)
+ChargingTips	laserctrl.h	28;"	prototype	signature:(void)
 ChgBit	inc\stm8s.h	2792;"	macro
 ClrBit	inc\stm8s.h	2790;"	macro
 Config	inc\stm8s.h	2306;"	member	union:__anon5::__anon6	typeref:struct:__anon5::__anon6::__anon12
@@ -979,8 +979,8 @@ GPIO_struct	inc\stm8s.h	265;"	struct
 GTR	inc\stm8s.h	1778;"	member	struct:UART1_struct
 GTR	inc\stm8s.h	1877;"	member	struct:UART2_struct
 GTR	inc\stm8s.h	2076;"	member	struct:UART4_struct
-GetPowerMode	powermode.c	35;"	function	signature:(void)
-GetPowerMode	powermode.h	23;"	prototype	signature:(void)
+GetPowerMode	powermode.c	43;"	function	signature:(void)
+GetPowerMode	powermode.h	25;"	prototype	signature:(void)
 HSE_VALUE	inc\stm8s.h	109;"	macro
 HSE_VALUE	inc\stm8s.h	111;"	macro
 HSIDivFactor	src\stm8s_clk.c	48;"	variable
@@ -988,6 +988,7 @@ HSITRIMR	inc\stm8s.h	522;"	member	struct:CLK_struct
 HSI_VALUE	inc\stm8s.h	118;"	macro
 HTRH	inc\stm8s.h	329;"	member	struct:ADC1_struct
 HTRL	inc\stm8s.h	330;"	member	struct:ADC1_struct
+HUGE_VAL	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	7;"	macro
 I2C	inc\stm8s.h	2656;"	macro
 I2CDataIn	lis3mod.h	13;"	macro
 I2CDataOut	lis3mod.h	14;"	macro
@@ -1218,8 +1219,8 @@ KR	inc\stm8s.h	1611;"	member	struct:IWDG_struct
 LASERGPIOx	laserctrl.h	7;"	macro
 LASERPINx	laserctrl.h	8;"	macro
 LASERPOWERGPIOx	laserctrl.h	9;"	macro
-LASERPOWEROFF	laserctrl.h	17;"	macro
-LASERPOWERON	laserctrl.h	16;"	macro
+LASERPOWEROFF	laserctrl.h	19;"	macro
+LASERPOWERON	laserctrl.h	18;"	macro
 LASERPOWERPINx	laserctrl.h	10;"	macro
 LEDGPIOPINx	powermode.h	7;"	macro
 LEDGPIOx	powermode.h	6;"	macro
@@ -1239,22 +1240,22 @@ LIS3_POWER_25HZ	lis3mod.h	60;"	enumerator	enum:LIS3DATARATE
 LIS3_POWER_400HZ	lis3mod.h	64;"	enumerator	enum:LIS3DATARATE
 LIS3_POWER_50HZ	lis3mod.h	61;"	enumerator	enum:LIS3DATARATE
 LIS3_POWER_OFF	lis3mod.h	57;"	enumerator	enum:LIS3DATARATE
-LOWPOWER_MODE	powermode.h	16;"	enumerator	enum:POWERMODE
+LOWPOWER_MODE	powermode.h	18;"	enumerator	enum:POWERMODE
 LSI_VALUE	inc\stm8s.h	119;"	macro
 LTRH	inc\stm8s.h	331;"	member	struct:ADC1_struct
 LTRL	inc\stm8s.h	332;"	member	struct:ADC1_struct
-LaserOff	laserctrl.c	98;"	function	signature:(void)
-LaserOff	laserctrl.h	21;"	prototype	signature:(void)
-LaserOn	laserctrl.c	10;"	function	signature:(void)
-LaserOn	laserctrl.h	20;"	prototype	signature:(void)
-LaserPower	laserctrl.c	114;"	function	signature:(uint8_t powerindex)
-LaserPower	laserctrl.h	24;"	prototype	signature:(uint8_t powerindex)
-LaserWork	laserctrl.c	54;"	function	signature:(void)
-LaserWork	laserctrl.h	22;"	prototype	signature:(void)
-LedBlink	laserctrl.c	144;"	function	signature:(uint8_t blinkspeed,uint16_t repeats)
-LedBlink	laserctrl.h	25;"	prototype	signature:(uint8_t blinkspeed,uint16_t repeats)
-LedPower	laserctrl.c	109;"	function	signature:(uint8_t powerindex)
-LedPower	laserctrl.h	23;"	prototype	signature:(uint8_t powerindex)
+LaserOff	laserctrl.c	136;"	function	signature:(void)
+LaserOff	laserctrl.h	23;"	prototype	signature:(void)
+LaserOn	laserctrl.c	16;"	function	signature:(void)
+LaserOn	laserctrl.h	22;"	prototype	signature:(void)
+LaserPower	laserctrl.c	152;"	function	signature:(uint8_t powerindex)
+LaserPower	laserctrl.h	26;"	prototype	signature:(uint8_t powerindex)
+LaserWork	laserctrl.c	63;"	function	signature:(void)
+LaserWork	laserctrl.h	24;"	prototype	signature:(void)
+LedBlink	laserctrl.c	194;"	function	signature:(uint8_t blinkspeed,uint16_t repeats)
+LedBlink	laserctrl.h	27;"	prototype	signature:(uint8_t blinkspeed,uint16_t repeats)
+LedPower	laserctrl.c	147;"	function	signature:(uint8_t powerindex)
+LedPower	laserctrl.h	25;"	prototype	signature:(uint8_t powerindex)
 Lis3Off	lis3mod.c	18;"	function	signature:(void)
 Lis3Off	lis3mod.h	81;"	prototype	signature:(void)
 Lis3On	lis3mod.c	9;"	function	signature:(void)
@@ -1307,14 +1308,13 @@ NEAR	inc\stm8s.h	123;"	macro
 NEAR	inc\stm8s.h	129;"	macro
 NEAR	inc\stm8s.h	143;"	macro
 NFPR	inc\stm8s.h	1520;"	member	struct:FLASH_struct
-NOPOWERCHARGE	powermode.h	11;"	macro
 NOPT1	inc\stm8s.h	1588;"	member	struct:OPT_struct
 NOPT2	inc\stm8s.h	1590;"	member	struct:OPT_struct
 NOPT3	inc\stm8s.h	1592;"	member	struct:OPT_struct
 NOPT4	inc\stm8s.h	1594;"	member	struct:OPT_struct
 NOPT5	inc\stm8s.h	1596;"	member	struct:OPT_struct
 NOPT7	inc\stm8s.h	1600;"	member	struct:OPT_struct
-NORMAL_MODE	powermode.h	15;"	enumerator	enum:POWERMODE
+NORMAL_MODE	powermode.h	17;"	enumerator	enum:POWERMODE
 NonHandledInterrupt	stm8_interrupt_vector.c	15;"	function	signature:(void)
 NonHandledInterrupt	stm8s_it.h	41;"	prototype	signature:(void)
 OARH	inc\stm8s.h	1334;"	member	struct:I2C_struct
@@ -1353,7 +1353,7 @@ OUT_Z_L_REG	lis3mod.h	32;"	enumerator	enum:XYZOUTREG
 PCKENR1	inc\stm8s.h	517;"	member	struct:CLK_struct
 PCKENR2	inc\stm8s.h	520;"	member	struct:CLK_struct
 POWERCHARGING	powermode.h	12;"	macro
-POWERMODE	powermode.h	14;"	enum
+POWERMODE	powermode.h	16;"	enum
 PR	inc\stm8s.h	1612;"	member	struct:IWDG_struct
 PSCR	inc\stm8s.h	1069;"	member	struct:TIM4_struct
 PSCR	inc\stm8s.h	1137;"	member	struct:TIM5_struct
@@ -1370,12 +1370,12 @@ PUKR	inc\stm8s.h	1524;"	member	struct:FLASH_struct
 Page	inc\stm8s.h	2327;"	member	struct:__anon5	typeref:union:__anon5::__anon6
 PointerAttr	inc\stm8s.h	156;"	macro
 PointerAttr	inc\stm8s.h	160;"	macro
-PowerOn	powermode.c	5;"	function	signature:(void)
-PowerOn	powermode.h	21;"	prototype	signature:(void)
-PowerSave	powermode.c	23;"	function	signature:(void)
-PowerSave	powermode.h	22;"	prototype	signature:(void)
+PowerOn	powermode.c	6;"	function	signature:(void)
+PowerOn	powermode.h	23;"	prototype	signature:(void)
+PowerSave	powermode.c	26;"	function	signature:(void)
+PowerSave	powermode.h	24;"	prototype	signature:(void)
 RCR	inc\stm8s.h	634;"	member	struct:TIM1_struct
-RECOVERING_MODE	powermode.h	17;"	enumerator	enum:POWERMODE
+RECOVERING_MODE	powermode.h	19;"	enumerator	enum:POWERMODE
 RECR	inc\stm8s.h	2296;"	member	struct:__anon5::__anon6::__anon12
 RESERVED	inc\stm8s.h	1982;"	member	struct:UART3_struct
 RESERVED	inc\stm8s.h	320;"	member	struct:ADC1_struct
@@ -1500,8 +1500,8 @@ SWCR	inc\stm8s.h	515;"	member	struct:CLK_struct
 SWIMCCR	inc\stm8s.h	523;"	member	struct:CLK_struct
 SWR	inc\stm8s.h	514;"	member	struct:CLK_struct
 SetBit	inc\stm8s.h	2789;"	macro
-SetPowerMode	powermode.c	39;"	function	signature:(enum POWERMODE powermode)
-SetPowerMode	powermode.h	24;"	prototype	signature:(enum POWERMODE powermode)
+SetPowerMode	powermode.c	47;"	function	signature:(enum POWERMODE powermode)
+SetPowerMode	powermode.h	26;"	prototype	signature:(enum POWERMODE powermode)
 TBR	inc\stm8s.h	444;"	member	struct:AWU_struct
 TDRH	inc\stm8s.h	327;"	member	struct:ADC1_struct
 TDRH	inc\stm8s.h	398;"	member	struct:ADC2_struct
@@ -2716,6 +2716,7 @@ __IO	inc\stm8s.h	208;"	macro
 __LASER_CONTROL_H	laserctrl.h	2;"	macro
 __LIGHT_MAIN_H	main.h	2;"	macro
 __LIS3_MODULE_H	lis3mod.h	2;"	macro
+__MATH__	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	5;"	macro
 __MODS0__	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\mods0.h	11;"	macro
 __O	inc\stm8s.h	207;"	macro
 __POWER_MODE_H	powermode.h	2;"	macro
@@ -2739,14 +2740,22 @@ __USER_BUTTON_H	userbutton.h	2;"	macro
 _stext	stm8_interrupt_vector.c	23;"	prototype	file:
 _stext	stm8s_it.h	40;"	prototype	signature:(void)
 _vectab	stm8_interrupt_vector.c	27;"	variable
+acos	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	9;"	prototype	signature:(double x)
+asin	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	10;"	prototype	signature:(double x)
 assert_failed	inc\stm8s_conf.h	108;"	prototype	signature:(uint8_t* file, uint32_t line)
-assert_failed	main.c	39;"	function	signature:(u8* file, u32 line)
+assert_failed	main.c	66;"	function	signature:(u8* file, u32 line)
 assert_param	inc\stm8s_conf.h	106;"	macro
 assert_param	inc\stm8s_conf.h	110;"	macro
+atan	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	11;"	prototype	signature:(double x)
+atan2	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	12;"	prototype	signature:(double y, double x)
 bool	inc\stm8s.h	231;"	typedef	typeref:enum:__anon1
+cachec	laserctrl.c	10;"	variable
+ceil	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	13;"	prototype	signature:(double x)
 conversion_value	laserctrl.c	4;"	variable
-currentmode	powermode.c	3;"	variable	typeref:enum:POWERMODE
-delay	main.c	33;"	function	signature:(uint32_t y)
+cos	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	14;"	prototype	signature:(double x)
+cosh	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	15;"	prototype	signature:(double x)
+currentmode	powermode.c	4;"	variable	typeref:enum:POWERMODE
+delay	main.c	60;"	function	signature:(uint32_t y)
 delay	main.h	9;"	prototype	signature:(uint32_t y)
 disableInterrupts	inc\stm8s.h	2717;"	macro
 disableInterrupts	inc\stm8s.h	2726;"	macro
@@ -2754,6 +2763,11 @@ disableInterrupts	inc\stm8s.h	2736;"	macro
 enableInterrupts	inc\stm8s.h	2716;"	macro
 enableInterrupts	inc\stm8s.h	2725;"	macro
 enableInterrupts	inc\stm8s.h	2735;"	macro
+exp	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	16;"	prototype	signature:(double x)
+fabs	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	17;"	prototype	signature:(double x)
+floor	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	18;"	prototype	signature:(double x)
+fmod	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	19;"	prototype	signature:(double x, double y)
+frexp	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	20;"	prototype	signature:(double x, int *pexp)
 halt	inc\stm8s.h	2723;"	macro
 halt	inc\stm8s.h	2732;"	macro
 halt	inc\stm8s.h	2742;"	macro
@@ -2764,13 +2778,19 @@ interrupt_handler	stm8_interrupt_vector.c	12;"	member	struct:interrupt_vector	fi
 interrupt_handler_t	stm8_interrupt_vector.c	8;"	typedef	file:
 interrupt_instruction	stm8_interrupt_vector.c	11;"	member	struct:interrupt_vector	file:
 interrupt_vector	stm8_interrupt_vector.c	10;"	struct	file:
-leddircache	laserctrl.c	6;"	variable
+laserlumcache	laserctrl.c	8;"	variable
+ldexp	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	21;"	prototype	signature:(double x, int exp)
+leddircache	laserctrl.c	7;"	variable
+log	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	22;"	prototype	signature:(double x)
+log10	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	23;"	prototype	signature:(double x)
 main	main.c	7;"	function
+modf	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	24;"	prototype	signature:(double value, double *pd)
 nop	inc\stm8s.h	2720;"	macro
 nop	inc\stm8s.h	2729;"	macro
 nop	inc\stm8s.h	2739;"	macro
 outcount	lis3mod.c	4;"	variable	typeref:enum:XYZNUM	file:
 outflag	lis3mod.c	5;"	variable	file:
+pow	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	25;"	prototype	signature:(double x, double y)
 presscount	userbutton.c	3;"	variable	file:
 rim	inc\stm8s.h	2718;"	macro
 rim	inc\stm8s.h	2727;"	macro
@@ -2781,6 +2801,11 @@ s8	inc\stm8s.h	224;"	typedef
 sim	inc\stm8s.h	2719;"	macro
 sim	inc\stm8s.h	2728;"	macro
 sim	inc\stm8s.h	2738;"	macro
+sin	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	26;"	prototype	signature:(double x)
+sinh	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	27;"	prototype	signature:(double x)
+sqrt	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	28;"	prototype	signature:(double x)
+tan	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	29;"	prototype	signature:(double x)
+tanh	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	30;"	prototype	signature:(double x)
 trap	inc\stm8s.h	2721;"	macro
 trap	inc\stm8s.h	2730;"	macro
 trap	inc\stm8s.h	2740;"	macro
@@ -2793,6 +2818,7 @@ uint8_t	inc\stm8s.h	216;"	typedef
 wfi	inc\stm8s.h	2722;"	macro
 wfi	inc\stm8s.h	2731;"	macro
 wfi	inc\stm8s.h	2741;"	macro
-xyzbuffer	laserctrl.c	7;"	variable
-xyzbufferc	laserctrl.c	8;"	variable
+xyz	laserctrl.c	6;"	variable
 xyzdata	lis3mod.c	6;"	variable
+ycache	laserctrl.c	9;"	variable
+zcache	laserctrl.c	9;"	variable
