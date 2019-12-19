@@ -5,7 +5,8 @@ volatile enum POWERMODE currentmode = RECOVERING_MODE;
 
 void PowerOn(void){
 	
-	//CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV8);
+	CLK_SYSCLKConfig(CLK_PRESCALER_CPUDIV2);
+	
 	LaserOn();
 	LASERPOWEROFF;
 	
@@ -15,7 +16,7 @@ void PowerOn(void){
 	Lis3On();
 	ButtonOn();
 	
-	LedBlink(1,3);
+	LedBlink(1,1);
 	LedPower(255);
 	
 	currentmode = NORMAL_MODE;

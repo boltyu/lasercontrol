@@ -3,10 +3,10 @@
 
 uint16_t conversion_value = 0;
 extern volatile uint8_t xyzdata[OUT_COUNT];
-volatile int8_t xyz[OUT_COUNT];
+//volatile int8_t xyz[OUT_COUNT];
 int8_t leddircache;
 //int16_t laserlumcache = 0;
-uint8_t zcache[10],ycache[10];
+uint8_t xcache[10];
 uint8_t cachec = 0;
 /*volatile double arctanalpha;
 double alpha;
@@ -68,52 +68,52 @@ void LaserWork(void){
 	
 	Mult_Read(DEVICEADDRESS,OUT_BASEREG,6,xyzdata);
 	
-	if(xyzdata[OUT_Z_H] < 128)
-		zcache[cachec] = 255 - xyzdata[OUT_Z_H];
+	/*if(xyzdata[OUT_X_H] < 128)
+		xcache[cachec] = 255 - xyzdata[OUT_X_H];
 	else
-		zcache[cachec] = xyzdata[OUT_Z_H];
+		xcache[cachec] = xyzdata[OUT_X_H];*/
+	xcache[cachec] = xyzdata[OUT_X_H];
 	cachec ++;
 	if(cachec == 10)
 		cachec = 0;
 	for(i = 0;i< 10;i ++)
 	{
-		tmp += zcache[i];
+		tmp += xcache[i];
 	}				
 	tmp = tmp/10;
-	if((tmp < 50 || tmp > 205) && (xyzdata[OUT_Y_H] < 50 || xyzdata[OUT_Y_H] > 205))
+	if(tmp > 140 && tmp < 210)
 	{
-		if(xyzdata[OUT_X_H] > 128)
-			leddircache ++;
-	}else{
+		//if(xyzdata[OUT_X_H] > 128)
+		leddircache ++;
+	}else if((xyzdata[OUT_Z_H] > 50 || xyzdata[OUT_Z_H] < 205) && (xyzdata[OUT_Y_H] > 50 || xyzdata[OUT_Y_H] < 205)){
 		leddircache --;
 	}
 
 	
-	
-	if(leddircache > 15){
+	if(leddircache > 5){
 		LASERPOWERON;
+		//LedPower(255);
 		leddircache = 0;
-	}else if(leddircache < -15)
+	}else if(leddircache < -5)
 	{
 		LASERPOWEROFF;
+		//LedPower(0);
 		leddircache = 0;
 	}
 	
-	for(i = 0;i< OUT_COUNT;i++)
+/*	for(i = 0;i< OUT_COUNT;i++)
 	{
 		xyz[i] = (int8_t)xyzdata[i];
 	}
-	/*
+	
 	arctanalpha = atan(xyz[OUT_Z_H] / sqrt((double)(xyz[OUT_Y_H]*xyz[OUT_Y_H] + xyz[OUT_X_H]*xyz[OUT_X_H])));
 	alpha = arctanalpha * 180/3.14159;
 	arctanbeta = atan(xyz[OUT_Y_H] / sqrt((double)(xyz[OUT_X_H]*xyz[OUT_X_H] + xyz[OUT_Z_H]*xyz[OUT_Z_H])));
 	beta = arctanbeta * 180 / 3.14159;
 	*/
 	if(ADC1_GetFlagStatus(ADC1_FLAG_EOC) != RESET){
-		
+		ADC1_ClearFlag(ADC1_FLAG_EOC);
 		lval = ADC1_GetConversionValue();
-
-		
 		if(lval < 64){
 			TIM1_SetCompare2(64);
 		}else{

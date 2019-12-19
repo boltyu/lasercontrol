@@ -692,7 +692,7 @@ CTRL_REG3	lis3mod.h	40;"	enumerator	enum:XYZCTRLREG
 CTRL_REG4	lis3mod.h	41;"	enumerator	enum:XYZCTRLREG
 CTRL_REG5	lis3mod.h	42;"	enumerator	enum:XYZCTRLREG
 CTRL_REG6	lis3mod.h	43;"	enumerator	enum:XYZCTRLREG
-ChargingTips	laserctrl.c	163;"	function	signature:(void)
+ChargingTips	laserctrl.c	156;"	function	signature:(void)
 ChargingTips	laserctrl.h	28;"	prototype	signature:(void)
 ChgBit	inc\stm8s.h	2792;"	macro
 ClrBit	inc\stm8s.h	2790;"	macro
@@ -979,7 +979,7 @@ GPIO_struct	inc\stm8s.h	265;"	struct
 GTR	inc\stm8s.h	1778;"	member	struct:UART1_struct
 GTR	inc\stm8s.h	1877;"	member	struct:UART2_struct
 GTR	inc\stm8s.h	2076;"	member	struct:UART4_struct
-GetPowerMode	powermode.c	43;"	function	signature:(void)
+GetPowerMode	powermode.c	44;"	function	signature:(void)
 GetPowerMode	powermode.h	25;"	prototype	signature:(void)
 HSE_VALUE	inc\stm8s.h	109;"	macro
 HSE_VALUE	inc\stm8s.h	111;"	macro
@@ -1244,17 +1244,17 @@ LOWPOWER_MODE	powermode.h	18;"	enumerator	enum:POWERMODE
 LSI_VALUE	inc\stm8s.h	119;"	macro
 LTRH	inc\stm8s.h	331;"	member	struct:ADC1_struct
 LTRL	inc\stm8s.h	332;"	member	struct:ADC1_struct
-LaserOff	laserctrl.c	136;"	function	signature:(void)
+LaserOff	laserctrl.c	129;"	function	signature:(void)
 LaserOff	laserctrl.h	23;"	prototype	signature:(void)
 LaserOn	laserctrl.c	16;"	function	signature:(void)
 LaserOn	laserctrl.h	22;"	prototype	signature:(void)
-LaserPower	laserctrl.c	152;"	function	signature:(uint8_t powerindex)
+LaserPower	laserctrl.c	145;"	function	signature:(uint8_t powerindex)
 LaserPower	laserctrl.h	26;"	prototype	signature:(uint8_t powerindex)
 LaserWork	laserctrl.c	63;"	function	signature:(void)
 LaserWork	laserctrl.h	24;"	prototype	signature:(void)
-LedBlink	laserctrl.c	194;"	function	signature:(uint8_t blinkspeed,uint16_t repeats)
+LedBlink	laserctrl.c	187;"	function	signature:(uint8_t blinkspeed,uint16_t repeats)
 LedBlink	laserctrl.h	27;"	prototype	signature:(uint8_t blinkspeed,uint16_t repeats)
-LedPower	laserctrl.c	147;"	function	signature:(uint8_t powerindex)
+LedPower	laserctrl.c	140;"	function	signature:(uint8_t powerindex)
 LedPower	laserctrl.h	25;"	prototype	signature:(uint8_t powerindex)
 Lis3Off	lis3mod.c	18;"	function	signature:(void)
 Lis3Off	lis3mod.h	81;"	prototype	signature:(void)
@@ -1372,7 +1372,7 @@ PointerAttr	inc\stm8s.h	156;"	macro
 PointerAttr	inc\stm8s.h	160;"	macro
 PowerOn	powermode.c	6;"	function	signature:(void)
 PowerOn	powermode.h	23;"	prototype	signature:(void)
-PowerSave	powermode.c	26;"	function	signature:(void)
+PowerSave	powermode.c	27;"	function	signature:(void)
 PowerSave	powermode.h	24;"	prototype	signature:(void)
 RCR	inc\stm8s.h	634;"	member	struct:TIM1_struct
 RECOVERING_MODE	powermode.h	19;"	enumerator	enum:POWERMODE
@@ -1500,7 +1500,7 @@ SWCR	inc\stm8s.h	515;"	member	struct:CLK_struct
 SWIMCCR	inc\stm8s.h	523;"	member	struct:CLK_struct
 SWR	inc\stm8s.h	514;"	member	struct:CLK_struct
 SetBit	inc\stm8s.h	2789;"	macro
-SetPowerMode	powermode.c	47;"	function	signature:(enum POWERMODE powermode)
+SetPowerMode	powermode.c	48;"	function	signature:(enum POWERMODE powermode)
 SetPowerMode	powermode.h	26;"	prototype	signature:(enum POWERMODE powermode)
 TBR	inc\stm8s.h	444;"	member	struct:AWU_struct
 TDRH	inc\stm8s.h	327;"	member	struct:ADC1_struct
@@ -2778,7 +2778,6 @@ interrupt_handler	stm8_interrupt_vector.c	12;"	member	struct:interrupt_vector	fi
 interrupt_handler_t	stm8_interrupt_vector.c	8;"	typedef	file:
 interrupt_instruction	stm8_interrupt_vector.c	11;"	member	struct:interrupt_vector	file:
 interrupt_vector	stm8_interrupt_vector.c	10;"	struct	file:
-laserlumcache	laserctrl.c	8;"	variable
 ldexp	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	21;"	prototype	signature:(double x, int exp)
 leddircache	laserctrl.c	7;"	variable
 log	d:\program files (x86)\stmicroelectronics\cosmic\fse_compilers\cxstm8\hstm8\math.h	22;"	prototype	signature:(double x)
@@ -2818,7 +2817,5 @@ uint8_t	inc\stm8s.h	216;"	typedef
 wfi	inc\stm8s.h	2722;"	macro
 wfi	inc\stm8s.h	2731;"	macro
 wfi	inc\stm8s.h	2741;"	macro
-xyz	laserctrl.c	6;"	variable
+xcache	laserctrl.c	9;"	variable
 xyzdata	lis3mod.c	6;"	variable
-ycache	laserctrl.c	9;"	variable
-zcache	laserctrl.c	9;"	variable
